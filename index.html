@@ -12,57 +12,82 @@
 <body>
 
     <header>
-        <h1>[Título del Artículo Científico]</h1>
-        <p><strong>Autor(es):</strong> Nombre del Autor</p>
-        <p><strong>Fecha:</strong> 26 de agosto de 2025</p>
+        <h1>Virtual Reality for Collaborative Design Review and Learning in Hydrogen Vehicle Architecture</h1>
+        <p><strong>Autor(es):</strong> Pagliari, Curzio; 
+Pignatelli, Edoardo; Frizziero, Leonardo
+</p>
+        <p><strong>Fecha:</strong> 20 de febrero de 2025</p>
     </header>
+
+<input type="text" id="buscador" placeholder="Buscar en el artículo..." />
+
 
     <main>
         <article>
+
+             <section id="busqueda">
+                <h2>Proceso de búsqueda</h2>
+                <ol type="I">
+                    <li>Ingreso a la base de datos scopus</li>
+                    <li>Se utiliza el ''query string'' para hacer una busqueda avanzada con la siguiente cadena de texto </li>
+                    <img src="imagenes/captura busqueda.png" alt="Búsqueda" width="900">
+                    <li>Se añaden filtros de búsqueda</li>
+                    <img src="imagenes/filtro.png" alt="Filtro" width="300">
+                    <li>Se aplican los filtros para hacer una búsqueda más precisa</li>
+                    <img src="imagenes/Nueva busqueda.png" alt="NB" width="900">
+
+                </ol>
+                
+            </section>
+
+            <button id="btnToggleResumen">Ocultar Resumen</button>
+
+
+
             <section id="resumen">
                 <h2>Resumen</h2>
-                <p>Aquí va el resumen del artículo en un párrafo breve.</p>
+                <p>El estudio presenta una plataforma de realidad virtual (VR) desarrollada con Unity 3D para mejorar el diseño y revisión colaborativa de vehículos comerciales impulsados por hidrógeno. La VR permite explorar, mover y probar la ubicación de componentes como tanques de hidrógeno, baterías y celdas de combustible en un entorno inmersivo.
+
+Las pruebas mostraron que los usuarios lograron mejor comprensión espacial (85%), más rapidez en tareas (40% más rápido que CAD tradicional) y mayor participación (90%). Sin embargo, se detectaron retos como mareos, curva de aprendizaje alta y necesidad de hardware potente.</p>
             </section>
 
-            <section id="introduccion">
-                <h2>Introducción</h2>
-                <p>Aquí escribes la introducción al tema.</p>
-            </section>
-
-            <section id="metodologia">
-                <h2>Metodología</h2>
-                <p>Describe los métodos usados en la investigación.</p>
-            </section>
-
-            <section id="resultados">
-                <h2>Resultados</h2>
-                <p>Presenta los hallazgos principales.</p>
-            </section>
-
-            <section id="discusion">
-                <h2>Discusión</h2>
-                <p>Analiza y discute los resultados obtenidos.</p>
+            <section id="palabrasC">
+                <h2>Palabras clave</h2>
+                <ul>
+                    <li>Realidad virtual (VR)</li>
+                    <li>Unity 3D</li>
+                    <li>Diseño colaborativo</li>
+                    <li>Vehículos de hidrógeno</li>
+                    <li>Tanques de hidrógeno</li>
+                    <li>Baterías</li>
+                </ul>
+               
             </section>
 
             <section id="conclusiones">
                 <h2>Conclusiones</h2>
-                <p>Escribe las conclusiones principales del estudio.</p>
+                <p>En conclusión, la VR ofrece beneficios claros en eficiencia, aprendizaje y colaboración en diseño automotriz, aunque aún requiere mejoras en accesibilidad y rendimiento.</p>
             </section>
 
             <section id="referencias">
                 <h2>Referencias</h2>
                 <ul>
-                    <li>Apellido, N. (Año). <i>Título del artículo</i>. Revista Científica, Vol(Número), páginas.</li>
-                    <li>Otro autor, X. (Año). <i>Título del libro</i>. Editorial.</li>
+                    <li>Pagliari, C., Pignatelli, E., & Frizziero, L. (2025). Virtual reality for collaborative design review and learning in hydrogen vehicle architecture. Computer Applications in Engineering Education, 33(3). https://doi.org/10.1002/cae.70015
+</li>
+
                 </ul>
             </section>
         </article>
     </main>
 
     <footer>
-        <p>&copy; 2025 - Página web del artículo científico</p>
+        <p>&copy; 2025 - Artículos </p>
     </footer>
 
+    
+   <button id="btnTop" title="Volver arriba">⬆</button>
+<script src="script.js"></script>
 </body>
-
 </html>
+
+   
