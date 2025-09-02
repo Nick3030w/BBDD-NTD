@@ -38,23 +38,23 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // --- Buscador de secciones ---
-const buscador = document.getElementById("buscador");
-const secciones = document.querySelectorAll("article section");
+  const buscador = document.getElementById("buscador");
+  const secciones = document.querySelectorAll("article section");
 
-if (buscador && secciones.length > 0) {
-  buscador.addEventListener("keyup", () => {
-    const texto = buscador.value.toLowerCase();
+  if (buscador && secciones.length > 0) {
+    buscador.addEventListener("keyup", () => {
+      const texto = buscador.value.toLowerCase();
 
-    secciones.forEach(sec => {
-      const contenido = sec.textContent.toLowerCase();
-      if (contenido.includes(texto)) {
-        sec.style.display = "";
-      } else {
-        sec.style.display = "none";
-      }
+      secciones.forEach(sec => {
+        const contenido = sec.textContent.toLowerCase();
+        if (contenido.includes(texto)) {
+          sec.style.display = "";
+        } else {
+          sec.style.display = "none";
+        }
+      });
     });
-  });
-}
+  }
 
 
 });
